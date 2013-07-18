@@ -41,7 +41,7 @@ module Docsplit
 
   # Use the ExtractText Java class to write out all embedded text.
   def self.extract_text(pdfs, opts={})
-    pdfs = ensure_pdfs(pdfs)
+    # pdfs = ensure_pdfs(pdfs)
     TextExtractor.new.extract(pdfs, opts)
   end
 
